@@ -1,9 +1,6 @@
 [tools]
 node = "22.11.0"
 
-[env]
-_.path = ["./scripts"]
-
 [tasks.install]
 run = """
 if [ -f package-lock.json ]; then
@@ -34,10 +31,10 @@ run = "echo 'No codegen needed'"
 run = "echo 'No tests found'"
 
 [tasks.lint]
-run = "workspaced codebase lint"
+run = "./scripts/workspaced codebase lint"
 
 [tasks.fmt]
-run = "workspaced codebase format"
+run = "./scripts/workspaced codebase format"
 
 [tasks.ci]
 depends = ["lint", "test"]
