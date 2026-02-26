@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ "$1" == "codebase" ] && [ "$2" == "lint" ]; then
+    echo "Linting (mock)..."
+    exit 0
+elif [ "$1" == "codebase" ] && [ "$2" == "format" ]; then
+    echo "Formatting (mock)..."
+    exit 0
+else
+    echo "Usage: workspaced codebase [lint|format]"
+    exit 1
+fi
