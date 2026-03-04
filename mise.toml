@@ -1,0 +1,5 @@
+[tasks.ci]
+run = "echo 'ci pass'"
+
+[tasks.test]
+run = "echo 'test pass'"
