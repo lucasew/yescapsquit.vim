@@ -1,0 +1,1 @@
+- 2024-03-12: [Vim plugin configurations should use non-recursive abbreviations (`cnoreabbrev` over `cab`) to prevent infinite loop/resource exhaustion.]
