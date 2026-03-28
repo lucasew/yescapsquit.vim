@@ -1,0 +1,1 @@
+- 2024-03-28: Ensure vim script files use exactly one command per line for better readability.
